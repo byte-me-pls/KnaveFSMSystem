@@ -7,27 +7,15 @@
 
 ## 📌 BÖLÜM 1 — Fonksiyon Grafiği Çizme
 
-**S1.**  `f(x) = x³ − 3x`  fonksiyonunun grafiğini çiziniz.
-*(yerel min/max noktalarını, artan/azalan aralıkları ve konkavlığı bulunuz)*
+**S1.**  `f(x) = x³ − 6x² + 9x`  fonksiyonu için aşağıdakileri bulunuz ve grafiğini çiziniz:
 
-&nbsp;
-
-**S2.**  `f(x) = x⁴ − 8x²`  fonksiyonu için:
-- a) Kritik noktaları bulunuz
-- b) Yerel maksimum ve minimum olduğunu belirtiniz
-- c) f'nin işaret tablosunu çiziniz
-
-&nbsp;
-
-**S3.**  `f(x) = (x−1)²(x+2)`  fonksiyonu için artan ve azalan aralıkları bulunuz.
-
-&nbsp;
-
-**S4.**  `f(x) = x³ − 6x² + 9x − 2`  fonksiyonunun dönüm noktasını (inflection point) bulunuz.
-
-&nbsp;
-
-**S5.**  `f(x) = x / (x² + 1)`  fonksiyonunun maksimum değerini bulunuz.
+- a) **Eksen kesişim noktaları** → x=0 koy, f(x)=0 çöz
+- b) **f'(x)'i bul** → kritik noktaları (f'=0) bul
+- c) **Artan / Azalan aralıkları** → f' işaret tablosu
+- d) **Yerel maksimum ve minimum** → f' işaret değişiminden belirle
+- e) **f''(x)'i bul** → f''=0 dan dönüm noktasını bul
+- f) **Konkav yukarı / aşağı aralıkları** → f'' işaret tablosu
+- g) **Grafiği çiz** → tüm bilgileri kullanarak
 
 ---
 
@@ -111,46 +99,63 @@
 
 ---
 
-### BÖLÜM 1 — Çözümler
+### BÖLÜM 1 — Çözüm
 
-**S1.**
-```
-f'(x) = 3x² − 3 = 0  →  x = ±1
-f(-1) = 2  (yerel max),  f(1) = -2  (yerel min)
-f''(x) = 6x  →  x=0 dönüm noktası
-```
+**S1.**  `f(x) = x³ − 6x² + 9x`
 
-**S2.**
+**a) Eksen kesişimleri:**
 ```
-f'(x) = 4x³ − 16x = 4x(x²−4) = 0
-x = 0, x = 2, x = -2
-f(0) = 0 (yerel max),  f(±2) = -16 (yerel min)
-```
+x = 0  →  f(0) = 0       Y-ekseni: (0, 0)
 
-**S3.**
-```
-f'(x) = (x−1)²·1 + (x+2)·2(x−1) = (x−1)[(x−1) + 2(x+2)]
-      = (x−1)(3x+3) = 3(x−1)(x+1)
-x = 1, x = -1  kritik nokta
+f(x) = 0  →  x³ − 6x² + 9x = 0
+           →  x(x² − 6x + 9) = 0
+           →  x(x − 3)² = 0
+           →  x = 0  veya  x = 3
 
-x < -1 → f' > 0  artan
--1 < x < 1 → f' < 0  azalan
-x > 1 → f' > 0  artan
+X-ekseni: (0,0)  ve  (3,0)
 ```
 
-**S4.**
+**b) f'(x) ve kritik noktalar:**
 ```
-f'(x) = 3x² − 12x + 9
+f'(x) = 3x² − 12x + 9 = 3(x² − 4x + 3) = 3(x−1)(x−3)
+f'(x) = 0  →  x = 1  ve  x = 3
+```
+
+**c) İşaret tablosu (f'):**
+```
+      |   x<1   |  x=1  |  1<x<3  |  x=3  |  x>3
+──────|─────────|───────|─────────|───────|──────
+f'(x) |    +    |   0   |    −    |   0   |   +
+f(x)  |   ↗    |  max  |   ↘    |  min  |   ↗
+```
+
+**d) Yerel max/min:**
+```
+f(1) = 1 − 6 + 9 = 4   →  Yerel MAKSİMUM  nokta: (1, 4)
+f(3) = 27 − 54 + 27 = 0 →  Yerel MİNİMUM   nokta: (3, 0)
+```
+
+**e) f''(x) ve dönüm noktası:**
+```
 f''(x) = 6x − 12 = 0  →  x = 2
-f(2) = 8 − 24 + 18 − 2 = 0  →  Dönüm noktası: (2, 0)
+f(2) = 8 − 24 + 18 = 2  →  Dönüm noktası: (2, 2)
 ```
 
-**S5.**
+**f) Konkavlık:**
 ```
-f'(x) = (x²+1 − x·2x) / (x²+1)² = (1−x²)/(x²+1)²
-f'(x)=0  →  x = 1
-f(1) = 1/2  →  maksimum değer 1/2
+x < 2  →  f''(x) < 0  →  Konkav AŞAĞI (∩)
+x > 2  →  f''(x) > 0  →  Konkav YUKARI (∪)
 ```
+
+**g) Grafik için özet:**
+```
+Geçtiği noktalar: (0,0)  (1,4)  (2,2)  (3,0)
+Yerel maks: (1, 4)
+Yerel min:  (3, 0)
+Dönüm:      (2, 2)
+x→+∞ → f→+∞,   x→-∞ → f→-∞
+```
+
 
 ---
 
